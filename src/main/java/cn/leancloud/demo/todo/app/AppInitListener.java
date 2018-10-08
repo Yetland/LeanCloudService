@@ -40,6 +40,7 @@ public class AppInitListener implements ServletContextListener {
         logger.info("appMasterKey = " + appMasterKey);
         logger.info("appEnv = " + appEnv);
         logger.info("haveStaging = " + haveStaging);
+        // 注册class
         registerClass();
 
         if ("development".equals(appEnv) && "true".equals(haveStaging) || "stage".equals(appEnv)) {

@@ -3,12 +3,13 @@ package cn.leancloud.demo.todo.bean;
 import java.util.HashMap;
 import java.util.Map;
 
+import cn.leancloud.demo.todo.base.BaseBean;
 import com.alibaba.fastjson.JSON;
 import com.avos.avoscloud.AVClassName;
 import com.avos.avoscloud.AVObject;
 
 @AVClassName("TodoBean")
-public class TodoBean extends AVObject {
+public class TodoBean extends BaseBean {
 
     public String getContent() {
         return getString("content");

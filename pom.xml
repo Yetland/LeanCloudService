@@ -59,6 +59,7 @@
 			</activation>
 			<properties>
 				<lean-jetty.version>${jettyVersion}</lean-jetty.version>
+				<!--suppress UnresolvedMavenProperty -->
 				<lean-jetty.port>${env.LEANCLOUD_APP_PORT}</lean-jetty.port>
 			</properties>
 			<build>
